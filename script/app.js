@@ -32,6 +32,7 @@ function reset() {
   for (let i = 0; i < squares.length; i++) {
     if (colors[i]) {
       squares[i].style.backgroundColor = colors[i];
+      squares[i].style.display = 'block';
     } else {
       squares[i].style.display = 'none';
     }
