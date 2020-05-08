@@ -1,7 +1,6 @@
 //=============
 //FUNCTIONS
 //=============
-
 function colorPicked() {
   let random = Math.floor( Math.random() * colors.length );
   return colors[random];
@@ -71,7 +70,6 @@ let pickedColor = colorPicked();
 //=============
 //LOGIC
 //=============
-
 colorDisplay.textContent = pickedColor;
 
 for (let i = 0; i < squares.length; i++) {
@@ -99,7 +97,7 @@ for (let i = 0; i < squares.length; i++) {
     clickedColorHex.style.backgroundColor = `${rgbToHex(clickedColor)}`
   });
 }
-
+//Easy and Hard buttons
 for (let i = 0; i < modeButtons.length; i++) {
   modeButtons[i].addEventListener('click', function() {
     modeButtons[0].classList.remove('selected');
@@ -115,28 +113,10 @@ for (let i = 0; i < modeButtons.length; i++) {
     reset();
   });
 }
-
 //Reset
 resetBtn.addEventListener('click', function() {
-  colors = generateRandomColors(numSquares);
-  pickedColor = colorPicked();
-  colorDisplay.textContent = pickedColor;
-
-  for (let i = 0; i < squares.length; i++) {
-    //Initial colors
-     squares[i].style.backgroundColor = colors[i];
-  }  
-  h1.style.background = 'steelblue';
-  if (this.textContent = 'Play again') {
-    this.textContent = 'New colors';
-  }
-  
-  clickedColorRgb.textContent = '';
-  clickedColorHex.textContent = '';
-  messageDisplay.textContent = '';
+  reset()
 });
-
-
 
 //RGB and Hex string `RGB: ${rgbVar}, Hex: ${rgbToHex(rgbVar)}`
 
