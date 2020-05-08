@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600&family=Roboto:wght@400;500&display=swap" rel="stylesheet"> 
+  <link rel="stylesheet" href="style/main.css">
+  <title>RGB</title>
+</head>
+<body>
+
+  <h1>
+    The great 
+    <br>
+    <span id="color-display"></span> 
+    <br>
+    color game
+  </h1>
+  
+  <div id="stripe">
+    <button id="reset">New colors</button>
+    <span id="message"></span>
+    <button class="mode">Easy</button>
+    <button class="mode">Hard</button>
+  </div>
+
+  <div class="container">
+    <div class="square"></div>
+    <div class="square"></div>
+    <div class="square"></div>
+    <div class="square"></div>
+    <div class="square"></div>
+    <div class="square"></div>
+  </div>
+  
+  <div>
+    <h2 class="clicked-color rgb">RGB</h2>
+    <h2 class="clicked-color hex">Hex</h2>
+  </div>
+  
+  <script src="script/rgbToHexConverter.js"></script>
+  <script type="text/javascript" src="script/app.js"></script>
+  <script src="journal.js"></script>
+  <script src="temp.js"></script>
+</body>
+</html>
